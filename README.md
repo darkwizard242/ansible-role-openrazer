@@ -1,7 +1,7 @@
 Ansible Role: openrazer
 =========
 
-Role to install (_by default_) `openrazer` package  or uninstall (_if  passed as var_)  on **Ubuntu** systems.
+Role to install (_by default_) `openrazer-meta` package  or uninstall (_if  passed as var_)  on **Ubuntu** systems.
 
 Requirements
 ------------
