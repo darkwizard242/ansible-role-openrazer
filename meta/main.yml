@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  role_name: openrazer
+  author: Ali Muhammad
+  description: Role for dynamically installing or uninstalling 'openrazer' package.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+
+  galaxy_tags:
+    - openrazer
+    - razer
+    - system
+    - os
+    - drivers
+
+dependencies: []

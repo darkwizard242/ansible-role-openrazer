@@ -1,0 +1,7 @@
+---
+# defaults file for openrazer
+openrazer_repo: 'ppa:openrazer/stable'
+openrazer_repo_desired_state: present
+openrazer_repo_filename: openrazer
+openrazer_app: openrazer-meta
+openrazer_package_desired_state: present
