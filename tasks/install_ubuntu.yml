@@ -6,6 +6,7 @@
     repo: "{{ openrazer_repo }}"
     state: "{{ openrazer_repo_desired_state }}"
     filename: "{{ openrazer_repo_filename }}"
+    codename: "{{ ansible_lsb['codename'] }}"
     update_cache: yes
 - name: Installing {{ openrazer_app }} on Ubuntu systems
   apt:
