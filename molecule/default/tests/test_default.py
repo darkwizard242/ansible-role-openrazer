@@ -7,7 +7,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 OPENRAZER_BINARY_PATH = '/usr/bin/openrazer-daemon'
-OPENRAZER_PACKAGE = 'openraze-meta'
+OPENRAZER_PACKAGE = 'openrazer-meta'
 
 
 def test_openrazer_package_installed(host):
