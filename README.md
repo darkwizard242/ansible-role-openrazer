@@ -1,7 +1,7 @@
 Ansible Role: openrazer
 =========
 
-Role to install (_by default_) `openrazer-meta` package  or uninstall (_if  passed as var_)  on **Ubuntu** systems.
+Role to install (_by default_) `openrazer-meta` package  or uninstall (_if  passed as var_)  on **Ubuntu** systems for supporting Razer products drivers and customization on Ubuntu systems.
 
 Requirements
 ------------
