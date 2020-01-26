@@ -6,21 +6,17 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-OPENRAZER_BINARY_PATH = '/usr/bin/openrazer-daemon'
-OPENRAZER_PACKAGE = 'openrazer-meta'
-
-
 def test_openrazer_package_installed(host):
-    host.package("OPENRAZER_PACKAGE").is_installed
+    assert host.package("openrazer-meta").is_installed
 
 
 def test_openrazer_binary_exists(host):
-    host.file('OPENRAZER_BINARY_PATH').exists
+    assert host.file('/usr/bin/openrazer-daemon').exists
 
 
 def test_openrazer_binary_file(host):
-    host.file('OPENRAZER_BINARY_PATH').is_file
+    assert host.file('/usr/bin/openrazer-daemon').is_file
 
 
-def test_openrazer_binary_whereis(host):
-    host.check_output('which openrazer-daemon') == OPENRAZER_BINARY_PATH
+def test_openrazer_binary_which(host):
+    assert host.check_output('which openrazer-daemon') == '/usr/bin/openrazer-daemon'
