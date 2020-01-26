@@ -20,4 +20,4 @@ def test_openrazer_binary_file(host):
 
 def test_openrazer_binary_which(host):
     assert host.check_output('which openrazer-daemon') == \
-    '/usr/bin/openrazer-daemon'
+      '/usr/bin/openrazer-daemon'
