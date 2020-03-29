@@ -2,7 +2,7 @@
 
 # Ansible Role: openrazer
 
-Role to install (_by default_) `openrazer-meta` package or uninstall (_if passed as var_) on **Ubuntu** systems for supporting Razer products drivers and customization on Ubuntu systems.
+Role to install (_by default_) [openrazer-meta](https://openrazer.github.io/) package or uninstall (_if passed as var_) on **Ubuntu** systems for supporting Razer products drivers and customization on Ubuntu systems.
 
 ## Requirements
 
@@ -43,7 +43,7 @@ For default behaviour of role (i.e. installation of **openrazer** package) in an
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openrazer
+    - darkwizard242.openrazer
 ```
 
 For customizing behavior of role (i.e. installation of latest **openrazer** package) in ansible playbooks.
@@ -51,9 +51,9 @@ For customizing behavior of role (i.e. installation of latest **openrazer** pack
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openrazer
-      vars:
-        openrazer_package_desired_state: latest
+    - darkwizard242.openrazer
+  vars:
+    openrazer_package_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **openrazer** package) in ansible playbooks.
@@ -61,9 +61,9 @@ For customizing behavior of role (i.e. un-installation of **openrazer** package)
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openrazer
-      vars:
-        openrazer_package_desired_state: absent
+    - darkwizard242.openrazer
+  vars:
+    openrazer_package_desired_state: absent
 ```
 
 ## License
