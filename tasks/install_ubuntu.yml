@@ -1,14 +1,15 @@
 ---
-# tasks file for openrazer - Ubuntu
+# tasks file for openrazer - Ubuntu OS
 
-- name: Adding repository {{ openrazer_repo }} on Ubuntu systems
+- name: Ubuntu OS | Adding repository {{ openrazer_repo }}
   apt_repository:
     repo: "{{ openrazer_repo }}"
     state: "{{ openrazer_repo_desired_state }}"
     filename: "{{ openrazer_repo_filename }}"
     codename: "{{ ansible_lsb['codename'] }}"
     update_cache: yes
-- name: Installing {{ openrazer_app }} on Ubuntu systems
+
+- name: Ubuntu OS | Installing {{ openrazer_app }}
   apt:
     name: "{{ openrazer_app }}"
     state: "{{ openrazer_package_desired_state }}"
