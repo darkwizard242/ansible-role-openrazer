@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: openrazer
-  author: Ali Muhammad
+  author: darkwizard242
   description: To dynamically installing or uninstalling 'openrazer-meta' package for support of Razer products on Ubuntu systems.
   company: none
   license: MIT
