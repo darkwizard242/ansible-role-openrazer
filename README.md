@@ -24,13 +24,13 @@ openrazer_package_desired_state: present
 
 ### Variables table:
 
-Variable                        | Value (default)        | Description
-------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------
-openrazer_repo                  | 'ppa:openrazer/stable' | Refers to the ppa repo to add.
-openrazer_repo_desired_state    | present                | Defined to dynamically chose whether to add/keep (i.e. `present`) or remove (i.e. `absent`) the repository file list from `/etc/apt/sources.list.d`.
-openrazer_repo_filename         | openrazer              | Defined to set the repository file name for saving in `/etc/apt/sources.list.d`
-openrazer_app                   | openrazer-meta         | Defines the app to install i.e. **openrazer-meta**
-openrazer_package_desired_state | present                | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default is set to `present`.
+Variable                        | Description
+------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------
+openrazer_repo                  | Refers to the ppa repo to add.
+openrazer_repo_desired_state    | Defined to dynamically chose whether to add/keep (i.e. `present`) or remove (i.e. `absent`) the repository file list from `/etc/apt/sources.list.d`.
+openrazer_repo_filename         | Defined to set the repository file name for saving in `/etc/apt/sources.list.d`
+openrazer_app                   | Defines the app to install i.e. **openrazer-meta**
+openrazer_package_desired_state | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default is set to `present`.
 
 ## Dependencies
 
@@ -72,4 +72,4 @@ For customizing behavior of role (i.e. un-installation of **openrazer** package)
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/).
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/).
