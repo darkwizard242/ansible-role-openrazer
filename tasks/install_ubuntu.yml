@@ -2,7 +2,7 @@
 # tasks file for openrazer - Ubuntu OS
 
 - name: Ubuntu OS | Adding repository {{ openrazer_repo }}
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: "{{ openrazer_repo }}"
     state: "{{ openrazer_repo_desired_state }}"
     filename: "{{ openrazer_repo_filename }}"
@@ -10,7 +10,7 @@
     update_cache: yes
 
 - name: Ubuntu OS | Installing {{ openrazer_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ openrazer_app }}"
     state: "{{ openrazer_package_desired_state }}"
     force_apt_get: yes
